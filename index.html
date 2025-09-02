@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LG MARKETING</title>
+  <link rel="stylesheet" href="css/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-[#4D4D4D] font-[Inter]">
+
+    <header class="flex justify-between items-center py-4 px-6 sm:px-10 md:px-20 lg:px-24 bg-white border-b border-[#D8D8D8] relative z-40">
+        <!-- Left: Logo + Company Name -->
+        <div class="flex items-center space-x-3">
+          <img src="images/lgmarketinglogo.png" alt="LG Marketing Logo" class="h-10 w-auto" />
+          <span class="text-[20px] italic font-bold text-[#4D4D4D]" style="font-family: 'Inter', sans-serif;">
+            LG MARKETING
+          </span>
+        </div>
+      
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-12 pr-8" style="font-family: 'Inter', sans-serif;">
+          <a href="index.html" class="text-[12px] text-[#000000] font-semibold hover:text-black-600">Home</a>
+          <a href="about.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">About</a>
+          <a href="products.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">Products</a>
+          <a href="projects.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">Projects</a>
+<button onclick="openContactusModal()"
+   class="text-[12px] bg-[#2F2F2F] text-white px-6 py-2 rounded font-bold transition">
+  Contact Us
+</button>
+        </nav>
+      
+        <!-- Hamburger Icon -->
+        <div class="md:hidden">
+          <button id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E90000]" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </header>
+      
+<!-- Slide-In Mobile Menu -->
+<div id="mobile-menu"
+     class="fixed top-0 right-0 h-full w-2/3 max-w-[300px] bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-[60] md:hidden">
+  <div class="flex justify-end p-4">
+    <button id="close-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E90000]" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  <nav class="flex flex-col space-y-6 px-6 text-[14px]" style="font-family: 'Inter', sans-serif;">
+    <a href="index.html" class="text-[#4D4D4D] hover:text-red-600">Home</a>
+    <a href="about.html" class="text-[#4D4D4D] hover:text-red-600">About</a>
+    <a href="services.html" class="text-[#4D4D4D] hover:text-red-600">Services</a>
+    <a href="contact.html" class="text-[#4D4D4D] hover:text-red-600"> Contact Us </a>
+ 
+  </nav>
+</div>
+
+<!-- Backdrop Overlay -->
+<div id="backdrop"
+     class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden md:hidden"></div>
+
+
+
+<!-- Hero Section -->
+<section class="bg-white py-16 px-6 border-b border-[#D8D8D8]">
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between">
+  
+      <!-- Left: Text (60%) -->
+      <div class="w-full md:w-[60%] pl-10 sm:pl-14 md:pl-20 lg:pl-24 text-left">
+        <h2 class="text-[36px] font-semibold leading-snug max-w-[95%]" style="font-family: 'Inter', sans-serif;">
+          <span class="text-[#4D4D4D]">Powering the Future with </span>
+          <span class="text-[#E90000]">Trusted Energy Solutions</span>
+        </h2>
+  
+        <p class="text-[10px] text-[#4D4D4D] mt-4 mb-6 max-w-md" style="font-family: 'Inter', sans-serif;">
+          Your one-stop destination for batteries, UPS systems, and solar energy products from top brands.
+        </p>
+  
+        <a href="products.html"
+           class="inline-block text-[12px] bg-[#E90000] text-white px-6 py-2 rounded font-bold "
+           style="font-family: 'Inter', sans-serif;">
+          View Products
+        </a>
+      </div>
+  
+    <!-- Right: Image Slideshow (hidden on mobile) -->
+    <div class="hidden md:flex w-full md:w-[40%] pr-10 sm:pr-14 md:pr-20 lg:pr-24 mt-6 md:mt-0 items-start justify-center md:justify-end relative overflow-hidden">
+        <div id="slideshow" class="transition-all duration-[600ms] ease-in-out w-full h-auto flex items-start justify-center">
+        <img src="images/Exide.png" alt="Slide Image" id="slide-img"
+            class="max-h-[220px] md:max-h-[260px] lg:max-h-[280px] w-auto object-contain" />
+        </div>
+  </div>
+    </div>
+  </section>
+  
+<!-- Secondary Section: Image Left, Text Right -->
+<section class="bg-white py-16 px-6 border-b border-[#D8D8D8]">
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between">
+  
+      <!-- Left: Static Image (40%) hidden on mobile -->
+      <div class="hidden md:flex w-full md:w-[40%] pl-10 sm:pl-14 md:pl-20 lg:pl-24 mt-6 md:mt-0 items-start justify-center md:justify-start">
+        <img src="images/allbrands.png" alt="Luminous Image"
+             class="max-h-[220px] md:max-h-[260px] lg:max-h-[280px] w-auto object-contain" />
+      </div>
+  
+      <!-- Right: Text Content (60%) fully right-aligned across all breakpoints -->
+      <div class="w-full md:w-[60%] pr-10 sm:pr-14 md:pr-20 lg:pr-24 mt-10 md:mt-0 text-right">
+        <div class="ml-auto text-right max-w-md">
+          <h2 class="text-[36px] font-semibold leading-snug" style="font-family: 'Inter', sans-serif;">
+            <span class="text-[#4D4D4D]">Authorized Dealers of </span>
+            <span class="text-[#E90000]">Top Brands</span>
+          </h2>
+  
+          <p class="text-[10px] text-[#4D4D4D] mt-4 mb-6" style="font-family: 'Inter', sans-serif;">
+            We are authorized dealers of leading energy brands, offering a wide range of batteries and inverters.
+          </p>
+  
+          <a href="products.html"
+             class="inline-block text-[12px] bg-[#E90000] text-white px-6 py-2 rounded font-bold "
+             style="font-family: 'Inter', sans-serif;">
+            View Brands
+          </a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+<!-- Specialization Section (Heading + Boxes in one section) -->
+<section class="bg-white py-12 px-6 border-t border-[#D8D8D8]">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <!-- Main Heading -->
+      <h2 class="text-[30px] font-semibold leading-snug" style="font-family: 'Inter', sans-serif;">
+        <span class="text-[#4D4D4D]">Our </span>
+        <span class="text-[#E90000]">Specialization</span>
+      </h2>
+  
+      <!-- Description Paragraph -->
+      <p class="text-[10px] text-[#4D4D4D] mt-4 mb-10 max-w-xl mx-auto" style="font-family: 'Inter', sans-serif;">
+        We specialize in delivering reliable energy solutions through sales, manufacturing, and service expertise.
+      </p>
+    </div>
+  
+<!-- Feature Boxes -->
+<div class="max-w-screen-xl mx-auto px-10 sm:px-14 md:px-20 lg:px-24 mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center">
+  
+      <!-- Box 1: Sales -->
+      <div class="border border-[#D8D8D8] bg-white p-6 text-center rounded-[50px] w-full max-w-[300px] mx-auto h-[400px] flex flex-col">
+        <img src="images/sales.png" alt="Sales" class="mx-auto h-20 w-auto mt-4 mb-6 object-contain" />
+        <h3 class="text-[20px] font-normal text-[#4D4D4D]">Sales</h3>
+        
+        <!-- Full-width Red Line -->
+        <div class="w-full h-[3px] rounded bg-[#E90000] my-4"></div>
+  
+        <!-- Buttons -->
+        <div class="flex-1 flex flex-col gap-y-[5px] justify-between">
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center" style="font-family: 'Inter', sans-serif;">Batteries</button>
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center">Inverters</button>
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center">Stabilizers</button>
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center rounded-b-[20px]">Solar Panel and UPS</button>
+        </div>
+      </div>
+  
+      <!-- Box 2: Manufacturing -->
+      <div class="border border-[#D8D8D8] bg-white p-6 text-center rounded-[50px] w-full max-w-[300px] mx-auto h-[400px] flex flex-col">
+        <img src="images/manufacturing.png" alt="Manufacturing" class="mx-auto h-20 w-auto mt-4 mb-6 object-contain" />
+        <h3 class="text-[20px] font-normal text-[#4D4D4D]">Manufacturing</h3>
+        <div class="w-full h-[3px] rounded bg-[#E90000] my-4"></div>
+        <div class="flex-1 flex flex-col gap-y-[5px] justify-between">
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center">APFC Panel Manufacturing</button>
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center rounded-b-[20px]">Solar EPC Contract Work</button>
+        </div>
+      </div>
+  
+      <!-- Box 3: Service -->
+      <div class="border border-[#D8D8D8] bg-white p-6 text-center rounded-[50px] w-full max-w-[300px] mx-auto h-[400px] flex flex-col">
+        <img src="images/service.png" alt="Service" class="mx-auto h-20 w-auto mt-4 mb-6 object-contain" />
+        <h3 class="text-[20px] font-normal text-[#4D4D4D]">Service</h3>
+        <div class="w-full h-[3px] rounded bg-[#E90000] my-4"></div>
+        <div class="flex-1 flex flex-col gap-y-[5px] justify-between">
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center">Power Quality Audit</button>
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center">Battery Health Check-Up</button>
+          <button class="flex-1 bg-[rgba(255,130,130,0.31)] text-[12px] text-[#4D4D4D] flex items-center justify-center rounded-b-[20px]">PM Subsidy Scheme</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Our Clients Section -->
+<section class="bg-white py-16 px-6 border-t border-[#D8D8D8]">
+    <div class="max-w-screen-xl mx-auto text-center">
+      
+      <!-- Heading -->
+      <h2 class="text-[30px] font-semibold leading-snug font-[Inter]">
+        <span class="text-[#4D4D4D]">Our </span>
+        <span class="text-[#E90000]">Clients</span>
+      </h2>
+  
+      <!-- Description -->
+      <p class="text-[10px] text-[#4D4D4D] mt-4 mb-10 max-w-xl mx-auto font-[Inter]">
+        With More than 50+ Active Clients
+      </p>
+  
+      <!-- Marquee Wrapper -->
+      <div class="overflow-hidden space-y-10 mt-10">
+        
+        <!-- Marquee Row 1 -->
+        <div class="relative w-full">
+          <div class="animate-marquee whitespace-nowrap flex space-x-10">
+            <img src="images/1.png" class="h-10 w-auto object-contain" />
+            <img src="images/2.png" class="h-10 w-auto object-contain" />
+            <img src="images/3.png" class="h-10 w-auto object-contain" />
+            <img src="images/4.png" class="h-10 w-auto object-contain" />
+            <img src="images/5.png" class="h-10 w-auto object-contain" />
+            <img src="images/6.png" class="h-10 w-auto object-contain" />
+            <img src="images/7.png" class="h-10 w-auto object-contain" />
+            <img src="images/8.png" class="h-10 w-auto object-contain" />
+            <img src="images/11.png" class="h-10 w-auto object-contain" />
+            <img src="images/22.png" class="h-10 w-auto object-contain" />
+            <img src="images/33.png" class="h-10 w-auto object-contain" />
+            <img src="images/44.png" class="h-10 w-auto object-contain" />
+            <img src="images/55.png" class="h-10 w-auto object-contain" />
+            <img src="images/66.png" class="h-10 w-auto object-contain" />
+            <img src="images/77.png" class="h-10 w-auto object-contain" />
+            <img src="images/88.png" class="h-10 w-auto object-contain" />
+          </div>
+        </div>
+  
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Divider Line Between Sections -->
+<div class="border-t border-[#D8D8D8] mt-12"></div>
+
+<!-- Trusted by Customers Section -->
+<section class="bg-white py-12 px-6 border-t border-[#D8D8D8]">
+    <div class="max-w-screen-xl mx-auto text-center">
+  
+      <!-- Heading -->
+      <h2 class="text-[30px] font-semibold leading-snug font-[Inter]">
+        <span class="text-[#4D4D4D]">Trusted by 100+ </span>
+        <span class="text-[#E90000]">Customers</span>
+      </h2>
+  
+      <!-- Small Line -->
+      <p class="text-[10px] text-[#4D4D4D] mt-4 mb-10 max-w-xl mx-auto font-[Inter]">
+        Proven track record in quality, service, and long-term partnerships.
+      </p>
+  
+      <!-- Testimonial Boxes -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-4 sm:px-10 md:px-20 lg:px-24">
+        
+        <!-- Box 1 -->
+        <div class="bg-white border border-[#E90000] p-6 rounded-[10px] flex flex-col text-left">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <img src="images/u2.png" alt="Customer A" class="h-10 w-10 rounded-full object-cover mr-3" />
+              <p class="text-[14px] font-semibold text-[#4D4D4D]">Customer A</p>
+            </div>
+            <div class="flex space-x-[2px] text-[12px] text-yellow-500">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+          <p class="text-[12px] text-[#4D4D4D] leading-relaxed">
+            “I’ve been buying batteries and inverters from LG Marketing for over 5 years. Their service is always prompt and the team is very knowledgeable.”
+          </p>
+        </div>
+  
+        <!-- Box 2 -->
+        <div class="bg-white border border-[#E90000] p-6 rounded-[10px] flex flex-col text-left">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <img src="images/u1.png" alt="Customer B" class="h-10 w-10 rounded-full object-cover mr-3" />
+              <p class="text-[14px] font-semibold text-[#4D4D4D]">Customer B</p>
+            </div>
+            <div class="flex space-x-[2px] text-[12px] text-yellow-500">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+          <p class="text-[12px] text-[#4D4D4D] leading-relaxed">
+            “We recently installed a solar UPS through LG Marketing. The quality and installation process were top-notch. Highly recommend them for solar solutions.”
+          </p>
+        </div>
+  
+        <!-- Box 3 -->
+        <div class="bg-white border border-[#E90000] p-6 rounded-[10px] flex flex-col text-left">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+              <img src="images/u2.png" alt="Customer C" class="h-10 w-10 rounded-full object-cover mr-3" />
+              <p class="text-[14px] font-semibold text-[#4D4D4D]">Customer C</p>
+            </div>
+            <div class="flex space-x-[2px] text-[12px] text-yellow-500">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+          <p class="text-[12px] text-[#4D4D4D] leading-relaxed">
+            “What sets LG Marketing apart is their after-sales support. Their technicians did a detailed battery health check and explained everything clearly.”
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Divider Line -->
+<div class="border-t border-[#FF2C2C] mt-10"></div>
+
+<!-- Final Red Footer Section -->
+<section class="bg-[#2F2F2F] py-16 px-6 text-white">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-10 sm:px-14 md:px-20 lg:px-24">
+  
+      <!-- Left: Logo + Info + Socials -->
+      <div>
+        <div class="flex items-center space-x-3 mb-4">
+          <img src="images/lgmarketinglogo.png" alt="LG Marketing Logo" class="h-12 w-auto rounded-md" />
+          <span class="text-[22px] italic font-bold font-[Inter]">LG MARKETING</span>
+        </div>
+        <p class="text-[10px] font-[Inter] leading-tight">
+            <span class="block mb-1">© 2025 LG Marketing</span>
+            <span class="block">All rights reserved</span>
+          </p>
+          
+        <div class="flex space-x-4 mt-4">
+          <a href="#"><img src="images/instagram.png" alt="Instagram" class="h-7 w-7" /></a>
+          <a href="#"><img src="images/twitter.png" alt="WhatsApp" class="h-7 w-7" /></a>
+          <a href="#"><img src="images/youtube.png" alt="X" class="h-7 w-7" /></a>
+        </div>
+      </div>
+  
+      <!-- Middle: Links -->
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Company -->
+        <div>
+          <h4 class="font-semibold text-[14px] mb-4 font-[Inter]">Company</h4>
+          <ul class="space-y-4 text-[10px] font-[Inter] font-normal">
+            <li><a href="#" class="hover:underline">About Us</a></li>
+            <li><a href="#" class="hover:underline">Blog</a></li>
+            <li><a href="#" class="hover:underline">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Support -->
+        <div>
+          <h4 class="font-semibold text-[14px] mb-4 font-[Inter]">Support</h4>
+          <ul class="space-y-4 text-[10px] font-[Inter] font-normal">
+            <li><a href="#" class="hover:underline">Help Center</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Right: Subscribe Box -->
+      <div>
+        <h4 class="font-semibold text-[16px] mb-4 font-[Inter]">Stay up to date</h4>
+        <form class="relative w-full max-w-sm">
+          <input type="email" placeholder="Enter your email"
+            class="w-full pr-10 px-4 py-2 rounded bg-white/20 text-white text-[12px] placeholder:text-white/60 font-[Inter] focus:outline-none" />
+          <button type="submit"
+            class="absolute right-1 top-1/2 transform -translate-y-1/2 bg-transparent p-1 rounded hover:bg-white/10 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>  
+  <script src="js/main.js"></script>
+  <div id="contactusModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50" onclick="closeContactusModal()">
+  <div onclick="event.stopPropagation()" 
+       class="bg-white rounded-3xl shadow-lg w-[90%] max-w-3xl p-6 relative mx-4 my-6 max-h-[90vh] overflow-y-auto">
+    
+    <!-- Close Button -->
+    <button onclick="closeContactusModal()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
+    
+    <h2 class="text-xl font-bold mb-6 text-center">Contact Us</h2>
+    
+    <!-- Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Google Map -->
+      <div class="rounded-[20px] overflow-hidden shadow-md">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.61672043518!2d77.81906137520883!3d12.738408587555977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae718570b43269%3A0xdbc44be26c50c02f!2sL.G.%20Marketing!5e0!3m2!1sen!2sin!4v1756803414187!5m2!1sen!2sin" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <!-- Office Info -->
+      <div class="bg-[rgba(255,130,130,0.12)] rounded-[20px] shadow-md p-6">
+        <h3 class="text-[20px] font-semibold text-[#E90000] mb-4">L.G. Marketing</h3>
+        
+        <p class="text-[14px] text-[#4D4D4D] mb-3">
+          Margam, Mariamman Temple, No.48E1, SF.No.647/1A2, CS Towers,<br>
+          Bangalore Bye Pass Road, Circle, near ASTC Depot,<br>
+          Hosur, Tamil Nadu 635109
+        </p>
+
+        <p class="text-[14px] font-medium text-[#4D4D4D] mb-4">
+          📞 <a href="tel:09894765839" class="text-[#E90000] hover:underline">09894765839</a>
+        </p>
+
+        <a href="https://maps.google.com/?q=L.G.+Marketing,+Hosur" target="_blank" 
+           class="inline-block bg-[#E90000] text-white px-6 py-2 rounded-full text-[12px] font-semibold hover:bg-red-700 transition">
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Script -->
+<script>
+  function openContactusModal() {
+    const modal = document.getElementById('contactusModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeContactusModal() {
+    const modal = document.getElementById('contactusModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luminous Batteries | LG MARKETING</title>
+  <link rel="stylesheet" href="css/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white text-[#4D4D4D] font-[Inter]">
+
+<!-- Header -->
+<header class="flex justify-between items-center py-4 px-6 sm:px-10 md:px-20 lg:px-24 bg-white border-b border-[#D8D8D8] relative z-40">
+  <div class="flex items-center space-x-3">
+    <img src="images/lgmarketinglogo.png" alt="LG Marketing Logo" class="h-10 w-auto" />
+    <span class="text-[20px] italic font-bold text-[#4D4D4D]">LG MARKETING</span>
+  </div>
+    <nav class="hidden md:flex items-center space-x-12 pr-8">
+      <a href="index.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">Home</a>
+      <a href="about.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">About</a>
+      <a href="products.html" class="text-[12px] text-[#000000] font-semibold hover:text-black-600">Products</a>
+      <a href="projects.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">Projects</a>
+<button onclick="openContactusModal()"
+   class="text-[12px] bg-[#2F2F2F] text-white px-6 py-2 rounded font-bold transition">
+  Contact Us
+</button>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-white py-12 px-6 sm:px-10 md:px-20 lg:px-24">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="w-full flex justify-center">
+      <img src="images/luminousmain.png" alt="Luminous Batteries" class="w-[60%] max-w-[400px] h-auto object-cover rounded-[20px]" />
+    </div>
+    <div class="w-full flex flex-col items-end text-right">
+      <img src="images/luminous1.png" alt="Luminous Logo" class="h-10 w-auto mb-4 self-end" />
+      <p class="text-[10px] text-[#4D4D4D] leading-relaxed text-right">
+        We are proud dealers of <span class="font-semibold">Luminous Batteries</span>, offering premium power storage for all home and industrial needs.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<hr class="border-t border-[#D8D8D8] w-full mb-6" />
+
+<!-- Battery Tabs -->
+<section class="bg-white py-10 px-6 sm:px-10 md:px-20 lg:px-24 mb-12">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-[26px] font-semibold mb-6 text-center">
+      <span class="text-[#4D4D4D]">Luminous</span> <span class="text-[#0147B9]">Battery Categories</span>
+    </h2>
+
+    <!-- Category Tabs -->
+    <div class="flex justify-center flex-wrap gap-2 mb-6">
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] bg-[#0147B9] text-white" data-tab="tab-a">AmpBox</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-b">Power Charge</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-c">Eco Charge</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-d">Red Charge Pro</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-e">Inverlast</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-f">Shakti Charge</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-g">Neo Charge</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-h">Lifemax</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-i">Extra Charge</button>
+      <button class="tab-btn text-[12px] font-medium px-5 py-2 rounded-full border border-[#D8D8D8] text-[#4D4D4D]" data-tab="tab-j">Ultra Charge</button>
+    </div>
+
+<!-- Tab AmpBox -->
+    <div id="tab-a" class="tab-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+       <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ampbox_ab36060.png" class="h-32 w-auto mb-3" alt="Luminous AmpBox AB36060 " />
+          <h3 class="text-[14px] font-semibold text-center">Luminous AmpBox AB36060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Gel Battery Series)</p>
+           <button onclick="openModal('Luminous AmpBox AB36060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+                <!-- Product Card 2 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ampbox_ab18060.png" class="h-32 w-auto mb-3" alt="Luminous AmpBox AB18060 " />
+          <h3 class="text-[14px] font-semibold text-center">Luminous AmpBox AB18060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Gel Battery Series)</p>
+           <button onclick="openModal('Luminous AmpBox AB18060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+        
+                <!-- Product Card 3 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ampbox_ab24060.png" class="h-32 w-auto mb-3" alt="Luminous AmpBox AB24060 " />
+          <h3 class="text-[14px] font-semibold text-center">Luminous AmpBox AB24060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Gel Battery Series)</p>
+           <button onclick="openModal('Luminous AmpBox AB24060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+    </div>
+
+<!-- Tab Power Charge -->
+    <div id="tab-b" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            42M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_powercharge_PC20042TT.png" class="h-32 w-auto mb-3" alt="Luminous Power Charge PC 20042TT" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Power Charge PC 20042TT</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Rural amd Semi-Urban Series)</p>
+           <button onclick="openModal('Luminous Power Charge PC 20042TT')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+     
+  <!-- Product Card 2 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            56M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_powercharge_PC18054_pro.png" class="h-32 w-auto mb-3" alt="Luminous Power Charge PC 18054 Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Power Charge PC 18054 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Rural amd Semi-Urban Series)</p>
+           <button onclick="openModal('Luminous Power Charge PC 18054 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+
+      </div>
+        <!-- Product Card 3 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            54M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_powercharge_PC 18054TJ_pro.png" class="h-32 w-auto mb-3" alt="Luminous Power Charge PC 18054TJ Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Power Charge PC 18054TJ Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Rural amd Semi-Urban Series)</p>
+           <button onclick="openModal('Luminous Power Charge PC 18054TJ Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Tab Eco Charge -->
+    <div id="tab-c" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+       <!-- Product Card 1 -->
+
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            42M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ecocharge_18000.png" class="h-32 w-auto mb-3" alt="Luminous Eco Charge 18000" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Eco Charge 18000</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Rural amd Semi-Urban Series)</p>
+           <button onclick="openModal('Luminous Eco Charge 18000')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+    </div>
+
+<!-- Tab Red Charge Pro -->
+    <div id="tab-d" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            36M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_18000.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 18000" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 18000</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 18000')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+   
+
+            <!-- Product Card 2 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            36M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_18000ST.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 18000ST" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 18000ST</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 18000ST')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+        
+        <!-- Product Card 3 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            36M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_25000.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 25000" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 25000</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 25000')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+      
+        <!-- Product Card 4 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_18000Pro.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 18000 Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 18000 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 18000 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+      
+        <!-- Product Card 5 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_25000Pro.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 25000 Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 25000 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 25000 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+                    
+        <!-- Product Card 6 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_24000Pro.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 24000 Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 24000 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 24000 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+        
+      <!-- Product Card 7 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_18000ST_Pro.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 18000ST Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 18000ST Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 18000ST Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 8 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_15000Pro.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 15000 Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 15000 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 15000 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+        <!-- Product Card 9 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_16000Pro.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 16000 Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 16000 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 16000 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 10 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_redcharge_26000Pro.png" class="h-32 w-auto mb-3" alt="Luminous Red Charge 26000 Pro" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Red Charge 26000 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Tall Tubular Series)</p>
+           <button onclick="openModal('Luminous Red Charge 26000 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+      </div>
+
+<!-- Tab Inverlast -->
+  <div id="tab-e" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+    <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt32060.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 32060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 32060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 32060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 2 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            36M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_ilst10036.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILST 10036" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILST 10036</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILST 10036')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+        
+      <!-- Product Card 3 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            42M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_ilst12042.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILST 12042" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILST 12042</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILST 12042')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 4 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            48M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltj18148.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTJ 18148" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTJ 18148</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTJ 18148')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+
+    <!-- Product Card 5 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt20060.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 20060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 20060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 20060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+  
+    <!-- Product Card 6 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt24060.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 24060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 24060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 24060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+
+    <!-- Product Card 7 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt25060.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 25060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 25060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 25060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 8 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt26060.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 26060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 26060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 26060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+    <!-- Product Card 9 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt28060.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 28060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 28060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 28060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+        <!-- Product Card 10 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt18060.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 18060 PRO" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 18060 Pro</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 18060 Pro')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      
+      <!-- Product Card 11 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            66M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_inverlast_iltt20066.png" class="h-32 w-auto mb-3" alt="Luminous Inverlast ILTT 20066" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Inverlast ILTT 20066</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Heavy Duty Tall Tubular)</p>
+           <button onclick="openModal('Luminous Inverlast ILTT 20066')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+  </div>
+
+<!-- Tab Shakti Charge -->
+    <div id="tab-f" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+  
+      <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_shakticharge_sc18060.png" class="h-32 w-auto mb-3" alt="Luminous Shakti Charge 18060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Shakti Charge 18060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(High Performance and Fast Charging)</p>
+           <button onclick="openModal('Luminous Shakti Charge 18060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+  </div>
+
+<!-- Tab Neo Charge -->
+    <div id="tab-g" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            30M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_neocharge_18030.png" class="h-32 w-auto mb-3" alt="Luminous Neo Charge 18030" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Neo Charge 18030</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(High Performance and Fast Charging)</p>
+           <button onclick="openModal('Luminous Neo Charge 18030')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+    </div>
+
+<!-- Tab LifeMax -->
+    <div id="tab-h" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            75M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_lifemax_lm18075.png" class="h-32 w-auto mb-3" alt="Luminous LifeMax LM 18075" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous LifeMax LM 18075</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Longer Backup)</p>
+           <button onclick="openModal('Luminous LifeMax LM 18075')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+    </div>
+
+<!-- Tab Extra Charge -->
+    <div id="tab-i" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            60M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_extracharge_ec18060.png" class="h-32 w-auto mb-3" alt="Luminous Extra Charge EC 18060" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Extra Charge EC 18060</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Extra Ordinary Performer)</p>
+           <button onclick="openModal('Luminous Extra Charge EC 18060')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+    </div>
+
+<!-- Tab Ultra Charge -->
+    <div id="tab-j" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Product Card 1 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            66M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ultracharge_uctt24066.png" class="h-32 w-auto mb-3" alt="Luminous Ultra Charge UCTT 24066" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Ultra Charge UCTT 24066</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Premium Range)</p>
+           <button onclick="openModal('Luminous Ultra Charge UCTT 24066')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 2 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            66M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ultracharge_uctt25066.png" class="h-32 w-auto mb-3" alt="Luminous Ultra Charge UCTT 25066" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Ultra Charge UCTT 25066</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Premium Range)</p>
+           <button onclick="openModal('Luminous Ultra Charge UCTT 25066')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 3 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            72M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ultracharge_uctt25072.png" class="h-32 w-auto mb-3" alt="Luminous Ultra Charge UCTT 25072" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Ultra Charge UCTT 25072</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Premium Range)</p>
+           <button onclick="openModal('Luminous Ultra Charge UCTT 25072')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+      <!-- Product Card 4 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            72M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ultracharge_uctt29072.png" class="h-32 w-auto mb-3" alt="Luminous Ultra Charge UCTT 29072" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Ultra Charge UCTT 29072</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Premium Range)</p>
+           <button onclick="openModal('Luminous Ultra Charge UCTT 29072')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+    <!-- Product Card 5 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            66M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ultracharge_uctt26066.png" class="h-32 w-auto mb-3" alt="Luminous Ultra Charge UCTT 26066" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Ultra Charge UCTT 26066</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Premium Range)</p>
+           <button onclick="openModal('Luminous Ultra Charge UCTT 26066')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+
+
+    <!-- Product Card 6 -->
+        <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+          <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+               style="background: linear-gradient(135deg, #4E83E1, #2C66C5, #0147B9); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            72M Warranty
+          </div>
+          <img src="images/luminous_batteries/luminous_ultracharge_uctt28066.png" class="h-32 w-auto mb-3" alt="Luminous Ultra Charge UCTT 28066" />
+          <h3 class="text-[14px] font-semibold text-center">Luminous Ultra Charge UCTT 28066</h3>
+          <p class="text-[10px] text-[#666] text-center mb-3">(Premium Range)</p>
+           <button onclick="openModal('Luminous Ultra Charge UCTT 28066')" class="text-[10px] px-4 py-1 rounded-full bg-[#0147B9] text-white">More Details</button>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#2F2F2F] text-white pt-12 pb-6 px-6 sm:px-10 md:px-20 lg:px-24">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div>
+      <div class="flex items-center space-x-3 mb-4">
+        <img src="images/lgmarketinglogo.png" alt="LG Marketing Logo" class="h-12 w-auto rounded-md" />
+        <span class="text-[22px] italic font-bold">LG MARKETING</span>
+      </div>
+      <p class="text-[10px]">Copyright © 2025 LG Marketing</p>
+      <p class="text-[10px] mt-1">All rights reserved</p>
+      <div class="flex space-x-3 mt-4">
+        <img src="images/insta.svg" class="h-4 w-4" />
+        <img src="images/whatsapp.svg" class="h-4 w-4" />
+        <img src="images/x.svg" class="h-4 w-4" />
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+      <div>
+        <h4 class="text-[14px] font-semibold mb-4">Company</h4>
+        <ul class="space-y-2 text-[10px] font-normal">
+          <li><a href="#" class="hover:underline">About us</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-[14px] font-semibold mb-4">Support</h4>
+        <ul class="space-y-2 text-[10px] font-normal">
+          <li><a href="#" class="hover:underline">Help Center</a></li>
+          <li><a href="#" class="hover:underline">Terms of service</a></li>
+          <li><a href="#" class="hover:underline">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-[14px] font-semibold mb-4">Stay up to date</h4>
+      <form class="relative max-w-[260px]">
+        <input type="email" placeholder="Enter your email" class="w-full bg-white/10 text-white placeholder-white/60 px-4 py-2 rounded-full text-[10px] pr-10 focus:outline-none" />
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 text-white">➔</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-tab');
+
+      tabButtons.forEach(b => {
+        b.classList.remove('bg-[#0147B9]', 'text-white');
+        b.classList.add('text-[#4D4D4D]');
+      });
+      btn.classList.add('bg-[#0147B9]', 'text-white');
+      btn.classList.remove('text-[#4D4D4D]');
+
+      tabContents.forEach(tc => tc.classList.add('hidden'));
+      document.getElementById(target).classList.remove('hidden');
+    });
+  });
+</script>
+  <!-- Modal Background -->
+<div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50" onclick="closeModal()">
+  <!-- Modal Box -->
+<div onclick="event.stopPropagation()" 
+     class="bg-white rounded-3xl shadow-lg w-[90%] max-w-md p-6 relative mx-4 my-6 max-h-[90vh] overflow-y-auto">
+
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
+    
+    <h2 class="text-base font-bold mb-4 text-center">Contact Us</h2>
+    
+    <!-- Contact Form -->
+    <form id="contactForm" action="https://formsubmit.co/vijaypathyhps@gmail.com" method="POST" class="space-y-3">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="">
+      
+      <!-- Product (autofilled) -->
+      <input type="hidden" id="productInput" name="product">
+
+      <!-- Name -->
+      <div class="flex items-center border rounded-lg px-3 py-2">
+        <span class="material-icons text-[#000000] mr-3 text-[18px]">person</span>
+        <input type="text" name="name" placeholder="Enter your name" class="w-full outline-none text-[12px] placeholder-gray-500" required>
+      </div>
+
+      <!-- Mobile Number -->
+      <div class="flex items-center border rounded-lg px-3 py-2">
+        <span class="material-icons text-[#000000] mr-3 text-[18px]">phone</span>
+        <input type="text" name="mobile" placeholder="Enter mobile number" class="w-full outline-none text-[12px] placeholder-gray-500" required>
+      </div>
+
+      <!-- Email (Optional) -->
+      <div class="flex items-center border rounded-lg px-3 py-2">
+        <span class="material-icons text-[#000000] mr-3 text-[18px]">email</span>
+        <input type="email" name="email" placeholder="Enter email (optional)" class="w-full outline-none text-[12px] placeholder-gray-500">
+      </div>
+
+<p class="text-gray-500 text-center" style="font-size: 15px;">
+  On submitting, our representative will call you shortly.
+</p>
+
+      <!-- Submit Button -->
+<div class="flex justify-center">
+  <button type="submit" 
+          class="bg-[#2F2F2F] text-white text-[8px] px-5 py-2 rounded-md " 
+          style="font-size: 12px;">
+    Send Request
+  </button>
+</div>
+    </form>
+
+    <!-- Success Message (hidden by default) -->
+    <div id="successMessage" class="hidden text-center space-y-3 py-6">
+      <span class="material-icons text-green-500 text-6xl">check_circle</span>
+      <h3 class="text-base font-semibold text-gray-800">Request Submitted!</h3>
+      <p class="text-gray-600 text-[12px]">Thank you for your interest. Our team will contact you shortly.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script>
+  function openModal(productName) {
+    const modal = document.getElementById('contactModal');
+    document.getElementById('productInput').value = productName; // Autofill product
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('contactModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+
+    // Reset modal for next time
+    document.getElementById('contactForm').classList.remove('hidden');
+    document.getElementById('successMessage').classList.add('hidden');
+    document.getElementById('contactForm').reset();
+  }
+
+  // Handle form submit
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this)
+    }).then(() => {
+      this.classList.add('hidden');
+      document.getElementById('successMessage').classList.remove('hidden');
+    }).catch(() => {
+      alert("Something went wrong. Please try again.");
+    });
+  });
+</script>
+<div id="contactusModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50" onclick="closeContactusModal()">
+  <div onclick="event.stopPropagation()" 
+       class="bg-white rounded-3xl shadow-lg w-[90%] max-w-3xl p-6 relative mx-4 my-6 max-h-[90vh] overflow-y-auto">
+    
+    <!-- Close Button -->
+    <button onclick="closeContactusModal()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
+    
+    <h2 class="text-xl font-bold mb-6 text-center">Contact Us</h2>
+    
+    <!-- Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Google Map -->
+      <div class="rounded-[20px] overflow-hidden shadow-md">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.61672043518!2d77.81906137520883!3d12.738408587555977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae718570b43269%3A0xdbc44be26c50c02f!2sL.G.%20Marketing!5e0!3m2!1sen!2sin!4v1756803414187!5m2!1sen!2sin" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <!-- Office Info -->
+      <div class="bg-[rgba(255,130,130,0.12)] rounded-[20px] shadow-md p-6">
+        <h3 class="text-[20px] font-semibold text-[#E90000] mb-4">L.G. Marketing</h3>
+        
+        <p class="text-[14px] text-[#4D4D4D] mb-3">
+          Margam, Mariamman Temple, No.48E1, SF.No.647/1A2, CS Towers,<br>
+          Bangalore Bye Pass Road, Circle, near ASTC Depot,<br>
+          Hosur, Tamil Nadu 635109
+        </p>
+
+        <p class="text-[14px] font-medium text-[#4D4D4D] mb-4">
+          📞 <a href="tel:09894765839" class="text-[#E90000] hover:underline">09894765839</a>
+        </p>
+
+        <a href="https://maps.google.com/?q=L.G.+Marketing,+Hosur" target="_blank" 
+           class="inline-block bg-[#E90000] text-white px-6 py-2 rounded-full text-[12px] font-semibold hover:bg-red-700 transition">
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Script -->
+<script>
+  function openContactusModal() {
+    const modal = document.getElementById('contactusModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeContactusModal() {
+    const modal = document.getElementById('contactusModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script>
+</body>
+</html>

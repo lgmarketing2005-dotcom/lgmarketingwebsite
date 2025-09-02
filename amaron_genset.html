@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaron Genset | LG MARKETING</title>
+  <link rel="stylesheet" href="css/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white text-[#4D4D4D] font-[Inter]">
+
+<!-- Header -->
+<header class="flex justify-between items-center py-4 px-6 sm:px-10 md:px-20 lg:px-24 bg-white border-b border-[#D8D8D8] relative z-40">
+  <div class="flex items-center space-x-3">
+    <img src="images/lgmarketinglogo.png" alt="LG Marketing Logo" class="h-10 w-auto" />
+    <span class="text-[20px] italic font-bold text-[#4D4D4D]">LG MARKETING</span>
+  </div>
+    <nav class="hidden md:flex items-center space-x-12 pr-8">
+      <a href="index.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">Home</a>
+      <a href="about.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">About</a>
+      <a href="products.html" class="text-[12px] text-[#000000] font-semibold hover:text-black-600">Products</a>
+      <a href="projects.html" class="text-[12px] text-[#4D4D4D] hover:text-black-600">Projects</a>
+<button onclick="openContactusModal()"
+   class="text-[12px] bg-[#2F2F2F] text-white px-6 py-2 rounded font-bold transition">
+  Contact Us
+</button>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-white py-12 px-6 sm:px-10 md:px-20 lg:px-24">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="w-full flex justify-center">
+      <img src="images/amaronmain.png" alt="Amaron Genset Battery" class="w-[60%] max-w-[400px] h-auto object-cover rounded-[20px]" />
+    </div>
+    <div class="w-full flex flex-col items-end text-right">
+      <img src="images/amaron1.png" alt="Amaron Logo" class="h-10 w-auto mb-4 self-end" />
+      <p class="text-[10px] text-[#4D4D4D] leading-relaxed text-right">
+        Power your generators with long-lasting and efficient <span class="font-semibold">Amaron Genset Batteries</span>, built for durability and uninterrupted performance.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<hr class="border-t border-[#D8D8D8] w-full mb-6" />
+
+<!-- Product Section (No tabs) -->
+<section class="bg-white py-10 px-6 sm:px-10 md:px-20 lg:px-24 mb-12">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-[26px] font-semibold mb-6 text-center">
+      <span class="text-[#4D4D4D]">Amaron</span> <span class="text-[#75BD29]">Genset Battery</span>
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center">
+      <div class="relative border border-[#D8D8D8] rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center pt-10 px-4 pb-4">
+        <div class="absolute top-2 left-2 px-3 py-1 rounded-md text-[10px] text-white"
+             style="background: linear-gradient(135deg, #A0D468, #8CC152, #75BD29); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+          24M Warranty
+        </div>
+        <img src="images/amaron_vehicles/amaron_genset_heavy_duty_black.png" alt="Amaron Genset Heavy Duty Black" class="h-32 w-auto mb-3" />
+        <h3 class="text-[14px] font-semibold text-center">Amaron Genset Heavy Duty Black</h3>
+        <p class="text-[10px] text-[#666] text-center mb-3">(Earth Movers)</p>
+        <button onclick="openModal('Amaron Genset Heavy Duty Black')" class="text-[10px] px-4 py-1 rounded-full bg-[#75BD29] text-white">More Details</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Footer -->
+<footer class="bg-[#2F2F2F] text-white pt-12 pb-6 px-6 sm:px-10 md:px-20 lg:px-24">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div>
+      <div class="flex items-center space-x-3 mb-4">
+        <img src="images/lgmarketinglogo.png" alt="LG Marketing Logo" class="h-12 w-auto rounded-md" />
+        <span class="text-[22px] italic font-bold">LG MARKETING</span>
+      </div>
+      <p class="text-[10px]">Copyright © 2025 LG Marketing</p>
+      <p class="text-[10px] mt-1">All rights reserved</p>
+      <div class="flex space-x-3 mt-4">
+        <img src="images/insta.svg" class="h-4 w-4" />
+        <img src="images/whatsapp.svg" class="h-4 w-4" />
+        <img src="images/x.svg" class="h-4 w-4" />
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+      <div>
+        <h4 class="text-[14px] font-semibold mb-4">Company</h4>
+        <ul class="space-y-2 text-[10px] font-normal">
+          <li><a href="#" class="hover:underline">About us</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-[14px] font-semibold mb-4">Support</h4>
+        <ul class="space-y-2 text-[10px] font-normal">
+          <li><a href="#" class="hover:underline">Help Center</a></li>
+          <li><a href="#" class="hover:underline">Terms of service</a></li>
+          <li><a href="#" class="hover:underline">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-[14px] font-semibold mb-4">Stay up to date</h4>
+      <form class="relative max-w-[260px]">
+        <input type="email" placeholder="Enter your email" class="w-full bg-white/10 text-white placeholder-white/60 px-4 py-2 rounded-full text-[10px] pr-10 focus:outline-none" />
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 text-white">➔</button>
+      </form>
+    </div>
+  </div>
+</footer>
+  <!-- Modal Background -->
+<div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50" onclick="closeModal()">
+  <!-- Modal Box -->
+<div onclick="event.stopPropagation()" 
+     class="bg-white rounded-3xl shadow-lg w-[90%] max-w-md p-6 relative mx-4 my-6 max-h-[90vh] overflow-y-auto">
+
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
+    
+    <h2 class="text-base font-bold mb-4 text-center">Contact Us</h2>
+    
+    <!-- Contact Form -->
+    <form id="contactForm" action="https://formsubmit.co/vijaypathyhps@gmail.com" method="POST" class="space-y-3">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="">
+      
+      <!-- Product (autofilled) -->
+      <input type="hidden" id="productInput" name="product">
+
+      <!-- Name -->
+      <div class="flex items-center border rounded-lg px-3 py-2">
+        <span class="material-icons text-[#000000] mr-3 text-[18px]">person</span>
+        <input type="text" name="name" placeholder="Enter your name" class="w-full outline-none text-[12px] placeholder-gray-500" required>
+      </div>
+
+      <!-- Mobile Number -->
+      <div class="flex items-center border rounded-lg px-3 py-2">
+        <span class="material-icons text-[#000000] mr-3 text-[18px]">phone</span>
+        <input type="text" name="mobile" placeholder="Enter mobile number" class="w-full outline-none text-[12px] placeholder-gray-500" required>
+      </div>
+
+      <!-- Email (Optional) -->
+      <div class="flex items-center border rounded-lg px-3 py-2">
+        <span class="material-icons text-[#000000] mr-3 text-[18px]">email</span>
+        <input type="email" name="email" placeholder="Enter email (optional)" class="w-full outline-none text-[12px] placeholder-gray-500">
+      </div>
+
+<p class="text-gray-500 text-center" style="font-size: 15px;">
+  On submitting, our representative will call you shortly.
+</p>
+
+      <!-- Submit Button -->
+<div class="flex justify-center">
+  <button type="submit" 
+          class="bg-[#2F2F2F] text-white text-[8px] px-5 py-2 rounded-md " 
+          style="font-size: 12px;">
+    Send Request
+  </button>
+</div>
+    </form>
+
+    <!-- Success Message (hidden by default) -->
+    <div id="successMessage" class="hidden text-center space-y-3 py-6">
+      <span class="material-icons text-green-500 text-6xl">check_circle</span>
+      <h3 class="text-base font-semibold text-gray-800">Request Submitted!</h3>
+      <p class="text-gray-600 text-[12px]">Thank you for your interest. Our team will contact you shortly.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script>
+  function openModal(productName) {
+    const modal = document.getElementById('contactModal');
+    document.getElementById('productInput').value = productName; // Autofill product
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('contactModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+
+    // Reset modal for next time
+    document.getElementById('contactForm').classList.remove('hidden');
+    document.getElementById('successMessage').classList.add('hidden');
+    document.getElementById('contactForm').reset();
+  }
+
+  // Handle form submit
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this)
+    }).then(() => {
+      this.classList.add('hidden');
+      document.getElementById('successMessage').classList.remove('hidden');
+    }).catch(() => {
+      alert("Something went wrong. Please try again.");
+    });
+  });
+</script>
+<!-- Contact Us Button -->
+<button onclick="openContactusModal()"
+   class="text-[12px] bg-[#2F2F2F] text-white px-6 py-2 rounded font-bold transition">
+  Contact Us
+</button>
+
+<!-- Contact Us Modal -->
+<div id="contactusModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50" onclick="closeContactusModal()">
+  <div onclick="event.stopPropagation()" 
+       class="bg-white rounded-3xl shadow-lg w-[90%] max-w-3xl p-6 relative mx-4 my-6 max-h-[90vh] overflow-y-auto">
+    
+    <!-- Close Button -->
+    <button onclick="closeContactusModal()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
+    
+    <h2 class="text-xl font-bold mb-6 text-center">Contact Us</h2>
+    
+    <!-- Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Google Map -->
+      <div class="rounded-[20px] overflow-hidden shadow-md">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.61672043518!2d77.81906137520883!3d12.738408587555977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae718570b43269%3A0xdbc44be26c50c02f!2sL.G.%20Marketing!5e0!3m2!1sen!2sin!4v1756803414187!5m2!1sen!2sin" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <!-- Office Info -->
+      <div class="bg-[rgba(255,130,130,0.12)] rounded-[20px] shadow-md p-6">
+        <h3 class="text-[20px] font-semibold text-[#E90000] mb-4">L.G. Marketing</h3>
+        
+        <p class="text-[14px] text-[#4D4D4D] mb-3">
+          Margam, Mariamman Temple, No.48E1, SF.No.647/1A2, CS Towers,<br>
+          Bangalore Bye Pass Road, Circle, near ASTC Depot,<br>
+          Hosur, Tamil Nadu 635109
+        </p>
+
+        <p class="text-[14px] font-medium text-[#4D4D4D] mb-4">
+          📞 <a href="tel:09894765839" class="text-[#E90000] hover:underline">09894765839</a>
+        </p>
+
+        <a href="https://maps.google.com/?q=L.G.+Marketing,+Hosur" target="_blank" 
+           class="inline-block bg-[#E90000] text-white px-6 py-2 rounded-full text-[12px] font-semibold hover:bg-red-700 transition">
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Script -->
+<script>
+  function openContactusModal() {
+    const modal = document.getElementById('contactusModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeContactusModal() {
+    const modal = document.getElementById('contactusModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script>
+
+
+</body>
+</html>
